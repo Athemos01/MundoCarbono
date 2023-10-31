@@ -1,0 +1,58 @@
+
+html, body {
+    height: 100%; /* Define a altura como 100% para ocupar toda a tela */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimento interno */
+    background-color: black;
+}
+.classheadtext{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+.classheadbox img{
+    width: 100%; /* A imagem ocupará toda a largura da div */
+    height: 100%; /* A imagem ocupará toda a altura da div */
+    object-fit: cover; /* Ajusta a imagem para cobrir a div, mantendo a proporção */
+}
+.classheadbox{
+    position: absolute;
+    background-image: url(../img/WhatsApp-Image-2022-11-07-at-10.22.06.webp);/*pegar a imagem*/
+    background-repeat: no-repeat; /*Sem repetição*/
+    background-size: cover; 
+    background-position: center;/*Centralizar a imagem */
+    height: 23%;
+    width: 100%;
+}
+.classheadbutton{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60%;    
+}
+.buttoncolor{
+    background:rgba(29, 218, 54, 0.548);
+    border: 1px solid black;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 20px 50px 0px 10px;
+    width: 100px;
+    height: 25px;
+}
+#calc{
+    margin: 10px 300px 0px 10px;
+    width:190px ;
+}
+
+

@@ -1,0 +1,5 @@
+Emissão de carbono
+
+Litro de combustivel: Gasolina, Etanol, Diesel.
+Consumo Eletrico (KW/h)
+Comida ??
