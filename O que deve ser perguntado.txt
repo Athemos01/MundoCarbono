@@ -1,5 +1,5 @@
 Emissão de carbono
 
+relação de cada estado
 Litro de combustivel: Gasolina, Etanol, Diesel.
 Consumo Eletrico (KW/h)
-Comida ??
