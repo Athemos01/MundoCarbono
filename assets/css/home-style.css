@@ -28,9 +28,10 @@ html, body {
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(5px);
     border-radius: 50px;
+    background-color: rgba(0, 0, 0, .5);
 }
 .font{
-    color: rgb(17, 155, 29)
+    color: rgb(255, 255,255)
 }
 .font-titulo{
     font-size: 90px;
