@@ -1,0 +1,6 @@
+html,body{
+    background-color: azure;
+    height: 100%; /* Define a altura como 100% para ocupar toda a tela */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimento interno */
+}

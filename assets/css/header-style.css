@@ -1,50 +1,51 @@
 .header{
-    position: relative;
-    height: 100%;
+    height: 60px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
+    background-color:rgb(255, 255, 255);
+    overflow: hidden;
 }
 .navbar{
-    position: relative;
-    min-height: 70px;
-    margin-bottom: 20px;
-    background-color:rgba(255, 255, 255, 0.753);  
+    display: flex;
+    height: 60px;
+    overflow: hidden;
 }
-
+ul{
+    display: inline-flex;
+    width: 100%;
+    height: 30px;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: right;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.item-menu{
+    margin-left: 10px; 
+}
+a{
+    color: white;
+    padding: 2px 20px;
+}
 a:link{
     color: #127A23;
     background-color: transparent;
     text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
+.brd:hover{
+    border-bottom: 1px solid black ;
 }
 a:visited{
     color: #127A23;
     text-decoration: underline;
 }
 .mundoimg{
-    position: absolute;
-    top:10px ;
+    margin-top: 5px;
+    width: 250px;
+    height: 45px;
 }
-.aaa{
-    position: absolute;
-    top: 30px;
-    left: 480px;
-    overflow: hidden;
-}
-a{
-    position: relative;
-    margin-right: 70px;
-    justify-content: space-around;
-}
-.btn-login{
-    position: relative;
+.btn{
     align-items: center;
     background-color: rgba(240, 240, 240, 0);
     border: 1px solid #DFDFDF;
@@ -59,18 +60,13 @@ a{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 80px;
-    height: 40px;
-    margin-top: 16px;
-    margin-left: 1150px;
 }
-
-.btn-login:active,
-.btn-login:hover {
+.btn:active,
+.btn:hover {
   outline: 0;
 }
-
-.btn-login:hover {
-  background-color: #FFFFFF;
-  border-color: rgba(0, 0, 0, 0.19);
+.btn:hover {
+  background-color:rgb(127, 255, 0);
+  border-color: rgba(0, 0, 0, 0.548);
+  text-decoration: underline;
 }
