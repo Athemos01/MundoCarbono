@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="./assets/css/header-style.css">
     <title>Mundo Carbono</title>
 </head>
+
 <body>
-    <header id="headerprinc" class="header header-fixed">        
+    <header id="headerprinc" class="header header-fixed">
         <nav class="navbar">
             <a href="index.html"><img class="mundoimg" src="assets/img/MundoCarbono.png"></a>
             <ul>
@@ -35,5 +37,97 @@
             </ul>
         </nav>
     </header>
+    <section class="c-section-1">
+        <div class="c-container">
+            <div class="c-question-container">
+                <div class="etapas first-eta" id="step1">
+                    <h1>Selecione o estado que more</h1>
+                    <select class="dropdown-estado" id="dropdown-estado">
+                        <option value="ini">Selecione o estado</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                    </select>
+                    <button class="c-btn-prox btn btn-eta1" onclick="nextStep()">Proximo</button>
+                </div>
+                <div class="etapas" id="step2">
+                    <h1>Combustivel gasto por mês</h1>
+                    <div class="gaso-container c-step2-container">
+                        <label for="gasolina">Gasolina</label>
+                        <div>
+                            <label>R$:</label>
+                            <input class="step2-input gasolina" type="text" oninput="validarNumero(this)" placeholder="0.00" id="gasolina">
+                        </div>
+                    </div>
+                    <div class="etanol-container c-step2-container">
+                        <label for="etanol">Etanol</label>
+                        <div>
+                            <label>R$:</label>
+                            <input class="step2-input etanol" type="text" oninput="validarNumero(this)" placeholder="0.00" id="etanol">
+                        </div>
+                    </div>
+                    <div class="diesel-container c-step2-container">
+                        <label for="diesel">Diesel</label>
+                        <div>
+                            <label>R$:</label>
+                            <input class="step2-input diesel" type="text" oninput="validarNumero(this)" placeholder="0.00" id="diesel">
+                        </div>
+                    </div>
+                    <div class="c-btn-container">
+                        <button class="c-btn-back btn btn-eta2" onclick="backStep()">Voltar</button>
+                        <button class="c-btn-prox btn btn-eta2" onclick="nextStep()">Proximo</button>
+                    </div>
+                </div>
+                <div class="etapas" id="step3">
+                    <h1>Quanto de Energia gasta ao mês</h1>
+                    <select class="dropdown-eletrica c-select-center" id="dropdown-eletrica">
+                        <option>Selecione o tipo de consumo</option>
+                        <option>KW/mês</option>
+                        <option>R$/mês</option>
+                    </select>
+                    <input class="step3-input" type="text" oninput="validarNumero(this)" placeholder="Valor:">
+                    <div class="c-btn-container">
+                        <button class="c-btn-back btn btn-eta2 btn-step3" onclick="backStep()">Voltar</button>
+                        <button class="c-btn-prox btn btn-eta2 btn-step3 " onclick="nextStep()">Proximo</button>
+                    </div>
+                </div>
+                <div class="etapas" id="step4">
+                    <h1>Cálculo concluído </h1>
+                    <p>você pode guarda seus resultados</p>
+                    <p>Apenas crie uma conta</p>
+                    <div class="c-btn-container">
+                        <button class="c-btn-back btn btn-eta2" onclick="backStep()">Voltar</button>
+                        <button class="c-btn-prox btn btn-eta2" onclick="nextStep()">Cadastrar agora?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/calculadora.js"></script>
 </body>
+
 </html>

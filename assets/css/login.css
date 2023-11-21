@@ -53,7 +53,9 @@ html,body{
 .input-box input::placeholder{
     color: #fff;
 }
-
+.inpbox{
+    text-align: center;
+}
 .remember-forgot{
     display: flex;
     justify-content: space-between;

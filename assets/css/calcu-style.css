@@ -1,6 +1,101 @@
 html,body{
-    background-color: azure;
     height: 100%; /* Define a altura como 100% para ocupar toda a tela */
     margin: 0; /* Remove margens externas */
     padding: 0; /* Remove preenchimento interno */
+    color: #fff;
+}
+
+.c-section-1{
+    display: flex;
+    width: 100%;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/Backgrounlogin.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.c-container{
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+.c-question-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.etapas h1{
+    text-align: center;
+}
+select{
+    border-radius: 20px;
+}
+.etapas{
+    position: relative;
+    padding: 20px 50px;
+    display: none;
+
+}
+.dropdown-estado{
+    width: 380px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 170px;
+    font-size: 13px;
+    text-align: center;
+}
+.first-eta{
+    display: block;
+}
+.c-btn-prox .c-btn-back{
+    width: 90px;
+    height: 30px;
+}
+.btn-eta1{
+    position: relative;
+    top: 100px;
+}
+.c-step2-container{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    margin-left: 250px;
+}
+.c-btn-container{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 50px;
+}
+.c-step2-container label{
+    font-size: 20px;
+}
+.step2-input{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+}
+.dropdown-eletrica{
+    width: 380px;
+    height: 30px;
+    text-align: center;
+    margin-left: 165px;
+    margin-top: 50px;
+}
+.step3-input{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    width: 380px;
+    height: 30px;
+    margin-left: 165px;
+    margin-top: 20px;
+}
+.btn-step3{
+    margin-top: 50px;
 }
