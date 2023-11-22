@@ -34,6 +34,7 @@ async function queryParseUser() {
         alert(`login feito`);
 
     } catch (error) {
+        alert(`Error: ${error.message}`);
         console.error('Erro ao consultar Parse: ', error);
     }
 }
