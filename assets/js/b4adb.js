@@ -11,7 +11,6 @@ async function createParseUser() {
         user = await user.save();
         if (user !== null) {
             // Notify the success by getting the attributes from the "User" object, by using the get method (the id attribute needs to be accessed directly, though)
-            console.log(user);
             alert(
                 `Cadastro feito com sucesso!! Bem vindo ${user.get("username")}`
             );
@@ -31,7 +30,7 @@ async function queryParseUser() {
     try {
         let user = await Parse.User.logIn(usernameInput, passwordInput);
 
-        console.log('Logged in user', user);
+        alert(`Login feito`);
         alert(`login feito`);
 
     } catch (error) {
