@@ -29,9 +29,8 @@ async function queryParseUser() {
     const passwordInput = document.getElementById("password").value;
     try {
         let user = await Parse.User.logIn(usernameInput, passwordInput);
-
         alert(`Login feito`);
-        alert(`login feito`);
+        console.log(`Login feito`);
 
     } catch (error) {
         alert(`Error: ${error.message}`);
