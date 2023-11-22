@@ -3,12 +3,13 @@ html,body{
     margin: 0; /* Remove margens externas */
     padding: 0; /* Remove preenchimento interno */
     color: #fff;
+    overflow: hidden;
 }
 
 .c-section-1{
     display: flex;
     width: 100%;
-    height: 580px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     background-image: url(/assets/img/Backgrounlogin.webp);
