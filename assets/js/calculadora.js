@@ -1,13 +1,10 @@
 let currentStep = 1;
 let totalStep = 4;
-let estados = "";
+
+//próximo estagio
 function nextStep() {
     const currentQuestion = document.getElementById(`step${currentStep}`);//Pegar as etapas
-    const getestados = document.getElementById('dropdown-estado')// pegar os estados
     currentQuestion.style.display = 'none';
-    if (estados!= "ini"){
-        estados = getestados;
-    }
     if (currentStep < totalStep) {
         currentStep++;
     }
@@ -16,6 +13,7 @@ function nextStep() {
         nextQuestion.style.display = 'block';
     }
 }
+//estagio anterior
 function backStep() {
     const currentQuestion = document.getElementById(`step${currentStep}`);
     currentQuestion.style.display = 'none';

@@ -3,14 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/perfil.css">
+    <link rel="stylesheet" href="assets/css/perfil-container.css">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
-    <title>Document</title>
+    <title>perfil</title>
 </head>
 <body>
     <section>
-        <button id="btn-sair" class="button">sair</button>
+        <div class="menu-container div1">
+            <ul>
+                <div class="container">
+                    <li onclick="mainpag()" class="menu-item step1">
+                        <div class="user-cotainer">
+                            <div class="user-icon">
+                            </div>
+                            <br>
+                            <label class="center-wec">Bem vindo</label>
+                            <br>
+                            <label id="nomeuser" class="nome-user center-wec"></label>
+                        </div>
+                    </li>
+                    <li onclick="combtn()" class="menu-item btn-menu step2">
+                        <div class="container-1">
+                            <div class="comb-icon">
+                            </div>
+                            <div class="nome-center combu">Combustivel</div>
+                        </div>
+                    </li>
+                    <li onclick="elecbtn()" class="menu-item btn-menu step3">
+                        <div class="elet-icon">
+                        </div>
+                        <div class="nome-center eletric">Eletricidade</div>
+                    </li>
+                    <li class="menu-item btn-menu step4">
+                        <div id="btn-sair" class="nome-center logout-btn">Logout</div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="container-main">
+            <div id="m-step0" class="main-pag">
+                <div class="constru">
+                    Pagina em Construção
+                </div>
+            </div>
+            <div id="m-step1" class="offpag">
+                <div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Combustivel</th>
+                            <th>R$</th>
+                            <th>Emissão de carbono</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Gasolina</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                          </tr>
+                          <tr>
+                            <td>Etanol</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                          </tr>
+                          <tr>
+                            <td>Diesel</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                          </tr>
+                        </tbody>
+                      </table>             
+                </div>
+            </div>
+            <div id="m-step2" class="offpag">
+                <div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Eletricidade</th>
+                            <th>Emissão de carbono</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="assets/js/perfil.js"></script>
     <script src="assets/js/b4acon.js"></script>
+    <script src="assets/js/perfilnome.js"></script>
 </body>
 </html>

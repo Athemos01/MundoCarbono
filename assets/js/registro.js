@@ -24,19 +24,3 @@ async function createParseUser() {
 document.getElementById("createButton").addEventListener("click", async function () {
     createParseUser();
 });
-async function queryParseUser() {
-    const usernameInput = document.getElementById("user").value;
-    const passwordInput = document.getElementById("password").value;
-    try {
-        let user = await Parse.User.logIn(usernameInput, passwordInput);
-        alert(`Login feito`);
-        console.log(`Login feito`);
-
-    } catch (error) {
-        alert(`Error: ${error.message}`);
-        console.error('Erro ao consultar Parse: ', error);
-    }
-}
-document.getElementById("queryButton").addEventListener("click", async function () {
-    queryParseUser();
-});

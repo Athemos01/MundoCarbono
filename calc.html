@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/calcu-style.css">
     <link rel="stylesheet" href="./assets/css/header-style.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <title>Mundo Carbono</title>
 </head>
 
@@ -109,7 +110,7 @@
                         <option>KW/mês</option>
                         <option>R$/mês</option>
                     </select>
-                    <input class="step3-input" type="text" oninput="validarNumero(this)" placeholder="Valor:">
+                    <input class="step3-input" type="text" oninput="validarNumero(this)" placeholder="Valor:" id="eletric">
                     <div class="c-btn-container">
                         <button class="c-btn-back btn btn-eta2 btn-step3" onclick="backStep()">Voltar</button>
                         <button class="c-btn-prox btn btn-eta2 btn-step3 " onclick="nextStep()">Proximo</button>
@@ -128,6 +129,7 @@
         </div>
     </section>
     <script src="assets/js/calculadora.js"></script>
+    <script src="assets/js/b4acon.js"></script>
 </body>
 
 </html>

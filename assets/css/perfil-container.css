@@ -1,0 +1,21 @@
+
+table {
+    position: absolute;
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 120px;
+  }
+
+  th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .offpag{
+    margin-left: 90px;
+  }
