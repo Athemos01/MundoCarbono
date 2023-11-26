@@ -1,4 +1,4 @@
-const step0 = document.getElementById('m-step0')
+const step0 = document.getElementById('m-step0');
 const step1 = document.getElementById(`m-step1`);
 const step2 = document.getElementById(`m-step2`);
 
